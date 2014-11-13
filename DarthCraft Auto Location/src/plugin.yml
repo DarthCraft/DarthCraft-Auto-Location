@@ -1,0 +1,7 @@
+name: DarthCraft-Auto-Locate
+main: me.RyanWild.CJFPanelPlugin.CJFPanelPlugin
+version: 0.0.0
+description: The DarthCraft GEOIP Location System
+depend: [DarthCraft]
+
+commands:
