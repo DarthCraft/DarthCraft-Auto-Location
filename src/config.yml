@@ -1,0 +1,68 @@
+## YAML Template.
+
+## Australia 
+AU:
+    X:
+    Y:
+    Z:
+## Belgium     
+BE:
+    X:
+    Y:
+    Z:
+## Canada
+CA:
+    X:
+    Y:
+    Z:    
+## Denmark
+DK:
+    X:
+    Y:
+    Z:    
+## France
+FR:
+    X:
+    Y:
+    Z:    
+## Germany
+GE:
+    X:
+    Y:
+    Z:    
+## Greece
+GR:
+    X:
+    Y:
+    Z:    
+## Ireland
+IE:
+    X:
+    Y:
+    Z:    
+## Netherlands
+NL:
+    X:
+    Y:
+    Z:    
+## New Zealand
+NZ:
+    X:
+    Y:
+    Z:    
+## United Kingdom of Great Britain and Northern Ireland
+GB:
+    X:
+    Y:
+    Z:    
+#United States of America
+US:
+    X:
+    Y:
+    Z:    
+# Others
+OTHER:
+    X:
+    Y:
+    Z:
+---
