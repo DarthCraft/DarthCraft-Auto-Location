@@ -24,7 +24,7 @@ public class DCAL_IPResolver
      */
     public DCAL_IPResolver()
         {
-        File database = new File("D://GeoLite2-City.mmdb");
+        File database = new File("https://www.superior-networks.com/maxmind/GeoLite2-City.mmdb");
 
         try
             {
@@ -36,6 +36,11 @@ public class DCAL_IPResolver
             }
         }
 
+    /**
+     * This will get the country iSO code (Eg US, GB etc) and return it for usage. 
+     * @param ip
+     * @return IsoCode
+     */
     public String getCountryISO(String ip)
         {
         try
