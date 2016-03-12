@@ -2,67 +2,67 @@
 
 ## Australia 
 AU:
-    X:
-    Y:
-    Z:
+    X: 55
+    Y: 67
+    Z: 33
 ## Belgium     
 BE:
-    X:
-    Y:
-    Z:
+    X: 55
+    Y: 67
+    Z: 33
 ## Canada
 CA:
-    X:
-    Y:
-    Z:    
+    X: 55
+    Y: 67
+    Z: 33
 ## Denmark
 DK:
-    X:
-    Y:
-    Z:    
+    X: 55
+    Y: 67
+    Z: 33
 ## France
 FR:
-    X:
-    Y:
-    Z:    
+    X: 55
+    Y: 67
+    Z: 33 
 ## Germany
 GE:
-    X:
-    Y:
-    Z:    
+    X: 55
+    Y: 67
+    Z: 33  
 ## Greece
 GR:
-    X:
-    Y:
-    Z:    
+    X: 55
+    Y: 67
+    Z: 33 
 ## Ireland
 IE:
-    X:
-    Y:
-    Z:    
+    X: 55
+    Y: 67
+    Z: 33  
 ## Netherlands
 NL:
-    X:
-    Y:
-    Z:    
+    X: 55
+    Y: 67
+    Z: 33  
 ## New Zealand
 NZ:
-    X:
-    Y:
-    Z:    
+    X: 55
+    Y: 67
+    Z: 33 
 ## United Kingdom of Great Britain and Northern Ireland
 GB:
-    X:
-    Y:
-    Z:    
+    X: 55
+    Y: 67
+    Z: 33  
 #United States of America
 US:
-    X:
-    Y:
-    Z:    
+    X: 23
+    Y: 23
+    Z: 23  
 # Others
 OTHER:
-    X:
-    Y:
-    Z:
+    X: 55
+    Y: 55
+    Z: 55
 ---

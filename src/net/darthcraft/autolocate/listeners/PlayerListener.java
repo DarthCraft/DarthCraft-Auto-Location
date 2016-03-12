@@ -39,12 +39,14 @@ public class PlayerListener implements Listener
         {
             return;
         }
+        
         String country = plugin.ipResolver.getCountryISO(player.getAddress().getHostName());
 
-        if (COUNTRIES.contains(country))
+        if (!player.hasPlayedBefore() && COUNTRIES.contains(country))
         {
             teleport(player.getWorld(), player, plugin.config.getInt(country.toUpperCase() + ".X"), plugin.config.getInt(country.toUpperCase() + ".Y"), plugin.config.getInt(country.toUpperCase() + ".Z"));
         }
+        
         else
         {
             teleport(player.getWorld(), player, plugin.config.getInt("OTHER" + ".X"), plugin.config.getInt("OTHER" + ".Y"), plugin.config.getInt("OTHER" + ".Z"));

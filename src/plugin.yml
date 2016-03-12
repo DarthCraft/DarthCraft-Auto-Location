@@ -1,7 +1,7 @@
-name: DarthCraft-Auto-Locate
-main: net.darrthcraftmod.autolocate.DarthCraftLocation
-version: 1.0
+name: DC-AutoLocate
+main: net.darthcraft.autolocate.DarthCraftLocation
+version: 1.1
 description: The DarthCraft GEOIP Location System
 depend: []
 
-commands:
+commands: 

@@ -1,53 +1,44 @@
 package net.darthcraft.autolocate;
 
-import net.pravian.bukkitlib.BukkitLib;
-import net.pravian.bukkitlib.command.BukkitCommandHandler;
-import net.pravian.bukkitlib.config.YamlConfig;
-import net.pravian.bukkitlib.implementation.BukkitPlugin;
-import net.pravian.bukkitlib.util.LoggerUtils;
+import java.io.InputStream;
+import java.util.Properties;
+import net.pravian.aero.Aero;
+import net.pravian.aero.internal.AeroContainer;
+import org.apache.commons.lang.exception.ExceptionUtils;
 import org.bukkit.Bukkit;
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandSender;
-import org.bukkit.plugin.PluginManager;
+import org.bukkit.plugin.ServicePriority;
+import org.bukkit.plugin.java.JavaPlugin;
 
-public class DarthCraftLocation extends BukkitPlugin
-{
+public class DarthCraftLocation extends JavaPlugin implements AeroContainer {
 
-    public DarthCraftLocation plugin;
-    public YamlConfig config;
-    public BukkitCommandHandler handler;
-    public PluginManager pm;
-    public DCAL_IPResolver ipResolver;
+    private final DarthCraftLocation plugin;
+    private final Aero aero;
+    //
 
-    @Override
-    public void onLoad()
-    {
+    public DarthCraftLocation() {
         this.plugin = this;
-        this.handler = new BukkitCommandHandler(plugin);
-        this.config = new YamlConfig(plugin, "config.yml");
-        this.pm = Bukkit.getPluginManager();
-
-        config.load();
+        this.aero = new Aero(plugin);
     }
 
     @Override
-    public void onEnable()
-    {
-        BukkitLib.init(plugin);
-        ipResolver = new DCAL_IPResolver();
-
-        LoggerUtils.info(plugin, "The DarthCraft Auto Location Plugin has been Enabled!");
+    public void onLoad() {
+        Bukkit.getServicesManager().register(AeroContainer.class, this, plugin, ServicePriority.Normal);
     }
 
     @Override
-    public void onDisable()
-    {
-        LoggerUtils.info(plugin, "The DarthCraft Auto Location Plugin has been Disabled!");
+    public void onEnable() {
+        aero.init();
+        new InternalMetricsSubmitter(plugin).submit();
     }
 
     @Override
-    public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args)
-    {
-        return handler.handleCommand(sender, cmd, commandLabel, args);
+    public void onDisable() {
+        this.aero.deinit();
     }
+
+    @Override
+    public Aero getAero() {
+        return aero;
+    }
+
 }
