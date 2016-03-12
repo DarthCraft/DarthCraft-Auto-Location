@@ -2,67 +2,67 @@
 
 ## Australia 
 AU:
-    X: 55
-    Y: 67
-    Z: 33
+    X: {}
+    Y: {}
+    Z: {}
 ## Belgium     
 BE:
-    X: 55
-    Y: 67
-    Z: 33
+    X: {}
+    Y: {}
+    Z: {}
 ## Canada
 CA:
-    X: 55
-    Y: 67
-    Z: 33
+    X: {}
+    Y: {}
+    Z: {}
 ## Denmark
 DK:
-    X: 55
-    Y: 67
-    Z: 33
+    X: {}
+    Y: {}
+    Z: {}
 ## France
 FR:
-    X: 55
-    Y: 67
-    Z: 33 
+    X: {}
+    Y: {}
+    Z: {}
 ## Germany
 GE:
-    X: 55
-    Y: 67
-    Z: 33  
+    X: {}
+    Y: {}
+    Z: {} 
 ## Greece
 GR:
-    X: 55
-    Y: 67
-    Z: 33 
+    X: {}
+    Y: {}
+    Z: {}
 ## Ireland
 IE:
-    X: 55
-    Y: 67
-    Z: 33  
+    X: {}
+    Y: {}
+    Z: {}  
 ## Netherlands
 NL:
-    X: 55
-    Y: 67
-    Z: 33  
+    X: {}
+    Y: {}
+    Z: {}  
 ## New Zealand
 NZ:
-    X: 55
-    Y: 67
-    Z: 33 
+    X: {}
+    Y: {}
+    Z: {}
 ## United Kingdom of Great Britain and Northern Ireland
 GB:
-    X: 55
-    Y: 67
-    Z: 33  
+    X: {}
+    Y: {}
+    Z: {} 
 #United States of America
 US:
-    X: 23
-    Y: 23
-    Z: 23  
+    X: {}
+    Y: {}
+    Z: {} 
 # Others
 OTHER:
-    X: 55
-    Y: 55
-    Z: 55
----
+    X: {}
+    Y: {}
+    Z: {}
+

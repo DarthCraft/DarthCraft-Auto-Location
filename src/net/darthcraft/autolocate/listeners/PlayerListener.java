@@ -2,7 +2,8 @@ package net.darthcraft.autolocate.listeners;
 
 import java.util.Arrays;
 import java.util.List;
-import net.darthcraft.autolocate.DarthCraftLocation;
+import net.darthcraft.autolocate.repair.DarthCraftAutoLocation;
+import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.entity.Player;
@@ -14,11 +15,11 @@ import org.bukkit.event.player.PlayerJoinEvent;
 public class PlayerListener implements Listener
 {
 
-    private final DarthCraftLocation plugin;
+    private final DarthCraftAutoLocation plugin;
 
     public static final List<String> COUNTRIES = Arrays.asList("AU", "BE", "CA", "DK", "FR", "GE", "GR", "IE", "NL", "NZ", "GB", "US");
 
-    public PlayerListener(DarthCraftLocation plugin)
+    public PlayerListener(DarthCraftAutoLocation plugin)
     {
         this.plugin = plugin;
 
@@ -41,9 +42,11 @@ public class PlayerListener implements Listener
         }
         
         String country = plugin.ipResolver.getCountryISO(player.getAddress().getHostName());
-
+        
+        
         if (!player.hasPlayedBefore() && COUNTRIES.contains(country))
         {
+
             teleport(player.getWorld(), player, plugin.config.getInt(country.toUpperCase() + ".X"), plugin.config.getInt(country.toUpperCase() + ".Y"), plugin.config.getInt(country.toUpperCase() + ".Z"));
         }
         

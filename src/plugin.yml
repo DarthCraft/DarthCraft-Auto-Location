@@ -1,7 +1,6 @@
-name: DC-AutoLocate
-main: net.darthcraft.autolocate.DarthCraftLocation
+name: DarthCraftAutoLocation
 version: 1.1
-description: The DarthCraft GEOIP Location System
-depend: []
-
-commands: 
+description: Revamp of DC-Auto Location!
+authors: [Wild1145, Adaptified]
+softdepend: [Aero]
+main: net.darthcraft.autolocate.repair.DarthCraftAutoLocation
